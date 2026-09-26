@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Exchange rates, GDP per capita and purchasing power comparisons." />
+    <title>Market Atlas — Economic Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-lockup"><div class="brand-mark">↗</div><div><div class="brand-name">Market Atlas</div><div class="brand-subtitle">Overseas economic intelligence</div></div></div>
+        <div class="topbar-meta"><span class="live-dot"></span><span>Live public data</span><span class="topbar-date" id="todayLabel"></span></div>
+      </header>
+      <main class="main-content">
+        <section class="hero-row"><div><p class="eyebrow">ECONOMIC DATA</p><h1>Make a confident first read of any market.</h1><p class="hero-copy">Compare currencies, nominal output and purchasing power in one calm, decision-ready workspace.</p></div><div class="hero-note"><div class="note-icon">◎</div><div><strong>Source-led by default</strong><span>World Bank WDI for country economics, public FX feeds for rates.</span></div></div></section>
+        <nav class="tab-nav" aria-label="Economic data sections"><button class="tab-button active" data-tab="exchange">Exchange Rate <span>↔</span></button><button class="tab-button" data-tab="gdp">GDP &amp; PPP <span>◎</span></button><button class="tab-button" data-tab="compare">Country Compare <span>⌁</span></button></nav>
+        <div id="app" aria-live="polite"></div>
+      </main>
+      <footer class="site-footer"><span>Designed for quick market analysis</span><span>Data can be delayed; see source and year on every view.</span></footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
