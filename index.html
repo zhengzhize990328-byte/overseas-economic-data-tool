@@ -13,16 +13,16 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div class="brand-lockup"><div class="brand-mark">↗</div><div><div class="brand-name">Market Atlas</div><div class="brand-subtitle">Overseas economic intelligence</div></div></div>
-        <div class="topbar-meta"><span class="live-dot"></span><span>Live public data</span><span class="topbar-date" id="todayLabel"></span></div>
+        <div class="brand-lockup"><div class="brand-mark">↗</div><div><div class="brand-name">Market Atlas</div><div class="brand-subtitle" id="brandSubtitle">Overseas economic intelligence</div></div></div>
+        <div class="topbar-right"><div class="topbar-meta"><span class="live-dot"></span><span id="liveDataLabel">Live public data</span><span class="topbar-date" id="todayLabel"></span></div><button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language">中文</button></div>
       </header>
       <main class="main-content">
-        <section class="hero-row"><div><p class="eyebrow">ECONOMIC DATA</p><h1>Make a confident first read of any market.</h1><p class="hero-copy">Compare currencies, nominal output and purchasing power in one calm, decision-ready workspace.</p></div><div class="hero-note"><div class="note-icon">◎</div><div><strong>Source-led by default</strong><span>World Bank WDI for country economics, public FX feeds for rates.</span></div></div></section>
-        <nav class="tab-nav" aria-label="Economic data sections"><button class="tab-button active" data-tab="exchange">Exchange Rate <span>↔</span></button><button class="tab-button" data-tab="gdp">GDP &amp; PPP <span>◎</span></button><button class="tab-button" data-tab="compare">Country Compare <span>⌁</span></button></nav>
+        <section class="hero-row"><div><p class="eyebrow" id="heroEyebrow">ECONOMIC DATA</p><h1 id="heroTitle">Make a confident first read of any market.</h1><p class="hero-copy" id="heroCopy">Compare currencies, nominal output and purchasing power in one calm, decision-ready workspace.</p></div><div class="hero-note"><div class="note-icon">◎</div><div><strong id="sourceLedLabel">Source-led by default</strong><span id="sourceDescription">World Bank WDI for country economics, public FX feeds for rates.</span></div></div></section>
+        <nav class="tab-nav" aria-label="Economic data sections"><button class="tab-button active" data-tab="exchange"><span data-tab-label="exchange">Exchange Rate</span> <span>↔</span></button><button class="tab-button" data-tab="gdp"><span data-tab-label="gdp">GDP &amp; PPP</span> <span>◎</span></button><button class="tab-button" data-tab="compare"><span data-tab-label="compare">Country Compare</span> <span>⌁</span></button></nav>
         <div id="app" aria-live="polite"></div>
       </main>
-      <footer class="site-footer"><span>Designed for quick market analysis</span><span>Data can be delayed; see source and year on every view.</span></footer>
+      <footer class="site-footer"><span id="footerQuickAnalysis">Designed for quick market analysis</span><span id="footerDataDelayed">Data can be delayed; see source and year on every view.</span></footer>
     </div>
-    <script type="module" src="./src/main.js?v=e68d31c"></script>
+    <script type="module" src="./src/main.js?v=20260927"></script>
   </body>
 </html>
